@@ -20,6 +20,7 @@ class UserMessage(models.Model):
     anonym = models.BooleanField(default=False)
     isYou = models.BooleanField(default=True)
     situation = models.ForeignKey(Situation, on_delete=models.CASCADE)
+    status = models.NullBooleanField()
     
     def __str__(self) -> str:
        return super().__str__()

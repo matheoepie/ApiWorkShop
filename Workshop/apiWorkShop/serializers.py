@@ -5,7 +5,7 @@ from .models import Situation, UserMessage
 class UserMessageSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = UserMessage
-        fields = ('firstName', 'phone','email','age','description','createAt','bullyDate','anonym','isYou','situation')
+        fields = ('firstName', 'phone','email','age','description','createAt','bullyDate','anonym','isYou','situation','status')
 
 class SituationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
